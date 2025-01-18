@@ -6,8 +6,8 @@
     --black:#333;
     --light-color:#666;
     --light-bg:#eee;
-    --border:2rem solid rgba(0, 0, 0, 0.1);
-    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0.1);
+    --border:.4rem solid rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0,0, 0.1);
 }
 
 *{
@@ -51,9 +51,18 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 6.5rem;
 }
+section{
+    padding: 7rem 2rem;
+}
+
 .header{
     padding: 2rem;
     border-bottom: var(--border);
+}
+.header.active{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border:0;
 }
 .header .logo{
     font-size: 2.5rem;
@@ -76,7 +85,45 @@ html{
     cursor: pointer;
     display: none;
 }
+.home{
+    background: url(../images/image_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    width: 55rem;
+    padding: 2rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.home .content p{
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.about .row{
+    min-height: 40vh;
+}
+.about .content span{
+    color: var(--blue);
+    font-size: 2rem;
 
+}
+.about .content h3{
+    font-size: 4rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+.about .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
 
 
@@ -89,6 +136,9 @@ html{
     }
     .header .link-btn{
         display: none;
+    }
+    section{
+        padding: 5rem 2rem;
     }
 }
 @media (max-width:768px) {
@@ -119,9 +169,33 @@ html{
         margin: 1rem 0;
         font-size: 2rem;
     }
+    section{
+        padding: 3rem 2rem;
+    }
+    .home{
+        background-position: left;
+        background: url(../images/image_1.jpg) no-repeat;
+    }
+    .home .content{
+        width: auto;
+    }
 }
 @media (max-width:450px) {
      html{
         font-size: 50%;
+
+     }
+     .home .content h3{
+        font-size: 5rem;
+        text-align: center;
+     }
+     .home .content p{
+        font-size: 1.8rem;
+        text-align: center;
+     }
+     .home .content .link-btn{
+        display: block;
+        align-self: center;
+        text-align: center;
      }
 }
