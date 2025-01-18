@@ -44,6 +44,23 @@
         </div>
     </section>
 
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 image">
+                    <img src="images/image_1.jpg" class="w-100 mb-4 mb-md-0" alt="">
+                </div>
+                <div class="col-md-6 content">
+                    <span>about us</span>
+                    <h3>True Healthcare For Your Family</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ad cum iste ullam, laboriosam nam,
+                        deserunt magni quos nostrum ducimus architecto! Temporibus labore dolor aliquid ab inventore. Id, vero culpa!</p>
+                    <a href="#contact" class="link-btn">make appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="js/script.js"></script>
 </body>
